@@ -63,7 +63,7 @@ class UserResource extends Resource
                     ->sortable(),
                 TextColumn::make('email_verified_at')
                     ->label('Email Verified At')
-                    ->searchable()
+                    ->dateTime('d/m/Y H:i:s') // Usa dateTime aquí para formatear la fecha
                     ->sortable(),
                 TextColumn::make('roles.name')
                     ->label('Role')
